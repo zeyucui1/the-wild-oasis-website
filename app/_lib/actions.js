@@ -48,5 +48,5 @@ export async function updateGuest(formData) {
     .single()
 
   if (error) throw new Error('Guest could not be updated')
-  revalidatePath('/account/profile')
+  revalidatePath('/account/profile') // revalidate profile page
 }
